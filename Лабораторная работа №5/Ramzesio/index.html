@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — Sport-Pit от Ramzesio</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <main class="page">
+        <section class="form-card" aria-labelledby="form-title">
+            <h1 class="form-card__title" id="form-title">Регистрация аккаунта</h1>
+            <p class="form-card__subtitle">Заполните данные для оформления заказов и персональных скидок</p>
+
+            <form class="form" action="#" method="post">
+                <!-- 1. TEXT -->
+                <div class="form__group">
+                    <label class="form__label" for="user-name">Имя и фамилия *</label>
+                    <input
+                        class="form__input"
+                        type="text"
+                        id="user-name"
+                        name="name"
+                        placeholder="Алексей Смирнов"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <!-- 2. EMAIL -->
+                <div class="form__group">
+                    <label class="form__label" for="user-email">Электронная почта *</label>
+                    <input
+                        class="form__input"
+                        type="email"
+                        id="user-email"
+                        name="email"
+                        placeholder="alexey@example.com"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <!-- 3. PASSWORD -->
+                <div class="form__group">
+                    <label class="form__label" for="user-password">Пароль *</label>
+                    <input
+                        class="form__input"
+                        type="password"
+                        id="user-password"
+                        name="password"
+                        placeholder="Минимум 8 символов"
+                        minlength="8"
+                        autocomplete="new-password"
+                        aria-describedby="password-hint"
+                        required>
+                    <span class="form__hint" id="password-hint">Используйте буквы и цифры (не менее 8 символов)</span>
+                </div>
+
+                <!-- 4. TEL -->
+                <div class="form__group">
+                    <label class="form__label" for="user-phone">Телефон *</label>
+                    <input
+                        class="form__input"
+                        type="tel"
+                        id="user-phone"
+                        name="phone"
+                        placeholder="+7 (999) 123-45-67"
+                        autocomplete="tel"
+                        required>
+                </div>
+
+                <!-- 5. DATE -->
+                <div class="form__group">
+                    <label class="form__label" for="user-birthdate">Дата рождения</label>
+                    <input
+                        class="form__input"
+                        type="date"
+                        id="user-birthdate"
+                        name="birthdate"
+                        min="1940-01-01"
+                        max="2012-12-31">
+                </div>
+
+                <!-- 6. RANGE -->
+                <div class="form__group">
+                    <div class="form__range-header">
+                        <label class="form__label" for="training-freq">Тренировок в неделю</label>
+                        <output class="form__range-value" id="freq-output" for="training-freq">3</output>
+                    </div>
+                    <input
+                        class="form__range"
+                        type="range"
+                        id="training-freq"
+                        name="training_frequency"
+                        min="0"
+                        max="7"
+                        step="1"
+                        value="3"
+                        oninput="document.getElementById('freq-output').value = this.value">
+                    <div class="form__range-scale" aria-hidden="true">
+                        <span>0</span>
+                        <span>3–4</span>
+                        <span>7</span>
+                    </div>
+                </div>
+
+                <!-- 7. RADIO (группа в fieldset + legend) -->
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Основная цель тренировок</legend>
+
+                    <label class="form__choice">
+                        <input
+                            class="form__radio"
+                            type="radio"
+                            name="goal"
+                            value="mass"
+                            checked>
+                        <span>Набор мышечной массы</span>
+                    </label>
+
+                    <label class="form__choice">
+                        <input
+                            class="form__radio"
+                            type="radio"
+                            name="goal"
+                            value="weight-loss">
+                        <span>Снижение веса и рельеф</span>
+                    </label>
+
+                    <label class="form__choice">
+                        <input
+                            class="form__radio"
+                            type="radio"
+                            name="goal"
+                            value="tone">
+                        <span>Поддержание формы и энергии</span>
+                    </label>
+                </fieldset>
+
+                <!-- 8. CHECKBOX -->
+                <fieldset class="form__fieldset">
+                    <legend class="visually-hidden">Согласие и подписка</legend>
+
+                    <label class="form__choice">
+                        <input
+                            class="form__checkbox"
+                            type="checkbox"
+                            name="newsletter"
+                            value="yes"
+                            checked>
+                        <span>Получать акции и скидки на спортпит</span>
+                    </label>
+
+                    <label class="form__choice">
+                        <input
+                            class="form__checkbox"
+                            type="checkbox"
+                            name="terms"
+                            value="agreed"
+                            required>
+                        <span>Я принимаю условия пользовательского соглашения *</span>
+                    </label>
+                </fieldset>
+
+                <button class="button button--primary" type="submit">
+                    Зарегистрироваться
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
