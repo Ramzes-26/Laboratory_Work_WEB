@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS — Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Боковое меню -->
+    <aside class="sidebar">
+        <div class="sidebar__logo">✦ NEXUS</div>
+
+        <p class="sidebar__title">МЕНЮ</p>
+
+        <nav class="sidebar__nav">
+            <a href="#" class="sidebar__link sidebar__link--active">
+                🏠 Главная
+            </a>
+            <a href="#" class="sidebar__link">
+                📊 Аналитика
+            </a>
+            <a href="#" class="sidebar__link">
+                👥 Клиенты
+            </a>
+            <a href="#" class="sidebar__link">
+                📦 Заказы
+            </a>
+            <a href="#" class="sidebar__link">
+                ⚙️ Настройки
+            </a>
+        </nav>
+
+        <div class="sidebar__bottom">
+            <div class="sidebar__user">
+                <div class="sidebar__avatar">R</div>
+                <div>
+                    <strong>Роман</strong>
+                    <span>Администратор</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Основная часть -->
+    <main class="main">
+
+        <!-- Шапка -->
+        <header class="header">
+            <div class="header__welcome">
+                <h1>Добро пожаловать! 👋</h1>
+                <p>Вот что происходит с вашим бизнесом сегодня.</p>
+            </div>
+
+            <div class="header__right">
+                <button class="header__notification">🔔</button>
+                <div class="header__profile">
+                    <div class="header__avatar">R</div>
+                    <span>Роман</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Статистика -->
+        <section class="stats">
+            <article class="stat-card">
+                <div class="stat-card__top">
+                    <span>Общая прибыль</span>
+                    <span class="stat-card__icon">💰</span>
+                </div>
+                <h2>€24 500</h2>
+                <p class="stat-card__growth">↗ +12.5% за месяц</p>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-card__top">
+                    <span>Клиенты</span>
+                    <span class="stat-card__icon">👥</span>
+                </div>
+                <h2>1 250</h2>
+                <p class="stat-card__growth">↗ +8.2% за месяц</p>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-card__top">
+                    <span>Заказы</span>
+                    <span class="stat-card__icon">📦</span>
+                </div>
+                <h2>856</h2>
+                <p class="stat-card__growth">↗ +15.3% за месяц</p>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-card__top">
+                    <span>Конверсия</span>
+                    <span class="stat-card__icon">📈</span>
+                </div>
+                <h2>4.8%</h2>
+                <p class="stat-card__growth">↗ +2.1% за месяц</p>
+            </article>
+        </section>
+
+        <!-- Аналитика -->
+        <section class="analytics">
+
+            <div class="panel analytics__chart">
+                <div class="panel__header">
+                    <div>
+                        <h2>Статистика продаж</h2>
+                        <p>Доход за последнюю неделю</p>
+                    </div>
+                    <span class="panel__badge">Эта неделя</span>
+                </div>
+
+                <div class="chart">
+                    <div class="chart__bars">
+                        <div class="chart__item">
+                            <div class="chart__bar" style="height: 45%"></div>
+                            <span>Пн</span>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__bar" style="height: 70%"></div>
+                            <span>Вт</span>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__bar" style="height: 55%"></div>
+                            <span>Ср</span>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__bar" style="height: 85%"></div>
+                            <span>Чт</span>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__bar" style="height: 65%"></div>
+                            <span>Пт</span>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__bar" style="height: 95%"></div>
+                            <span>Сб</span>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__bar" style="height: 75%"></div>
+                            <span>Вс</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Активность -->
+            <div class="panel analytics__activity">
+                <div class="panel__header">
+                    <div>
+                        <h2>Активность</h2>
+                        <p>Последние события</p>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <div class="activity__item">
+                        <span class="activity__icon">🛍️</span>
+                        <div>
+                            <strong>Новый заказ</strong>
+                            <p>5 минут назад</p>
+                        </div>
+                    </div>
+
+                    <div class="activity__item">
+                        <span class="activity__icon">👤</span>
+                        <div>
+                            <strong>Новый клиент</strong>
+                            <p>20 минут назад</p>
+                        </div>
+                    </div>
+
+                    <div class="activity__item">
+                        <span class="activity__icon">💳</span>
+                        <div>
+                            <strong>Получена оплата</strong>
+                            <p>1 час назад</p>
+                        </div>
+                    </div>
+
+                    <div class="activity__item">
+                        <span class="activity__icon">📦</span>
+                        <div>
+                            <strong>Заказ отправлен</strong>
+                            <p>2 часа назад</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Последние заказы -->
+        <section class="panel orders">
+            <div class="panel__header">
+                <div>
+                    <h2>Последние заказы</h2>
+                    <p>Информация о недавних покупках</p>
+                </div>
+                <a href="#" class="orders__all">Все заказы →</a>
+            </div>
+
+            <div class="orders__table-wrap">
+                <table class="orders__table">
+                    <thead>
+                        <tr>
+                            <th>Клиент</th>
+                            <th>Номер заказа</th>
+                            <th>Дата</th>
+                            <th>Сумма</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Анна Иванова</td>
+                            <td>#1025</td>
+                            <td>25.11.2026</td>
+                            <td>€250</td>
+                            <td><span class="status status--done">Выполнен</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Максим Петров</td>
+                            <td>#1024</td>
+                            <td>24.11.2026</td>
+                            <td>€180</td>
+                            <td><span class="status status--pending">В обработке</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Елена Смирнова</td>
+                            <td>#1023</td>
+                            <td>24.11.2026</td>
+                            <td>€320</td>
+                            <td><span class="status status--done">Выполнен</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Дмитрий Козлов</td>
+                            <td>#1022</td>
+                            <td>23.11.2026</td>
+                            <td>€95</td>
+                            <td><span class="status status--cancel">Отменён</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <p>© 2026 NEXUS Dashboard. Все права защищены.</p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>

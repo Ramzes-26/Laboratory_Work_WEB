@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <!-- Обязательный мета-тег для адаптивности -->
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Task Dashboard</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard">
+ <!-- Шапка (Блок header внутри блока dashboard) -->
+ <header class="dashboard__header header">
+ <div class="header__logo">MyTasks</div>
+ <div class="header__user">Стрелков Р.</div>
+ </header>
+ <!-- Боковое меню (Сайдбар) -->
+ <aside class="dashboard__sidebar sidebar">
+ <nav class="sidebar__nav">
+ <!-- Модификатор --active указывает на активную ссылку
+-->
+ <a href="#" class="sidebar__link sidebar__link--
+active">Главная</a>
+ <a href="#" class="sidebar__link">Настройки</a>
+ </nav>
+ </aside>
+ <!-- Основной контент -->
+ <main class="dashboard__main main-content">
+ <h1 class="main-content__title">Мои задачи</h1>
+
+ <!-- Сетка карточек -->
+ <div class="cards-grid">
+ <!-- Карточка 1 (Блок task-card) -->
+ <article class="task-card">
+ <h2 class="task-card__title">Сделать
+лабораторную</h2>
+ <p class="task-card__desc">По предмету ИТ и
+Программирование</p>
+ <button class="task-card__btn">Выполнено</button>
+ </article>
+ <!-- Карточка 2 -->
+ <article class="task-card">
+ <h2 class="task-card__title">Купить Sport-Pit</h2>
+ <p class="task-card__desc">Протеин, креатин</p>
+ <button class="task-card__btn">Выполнено</button>
+ </article>
+ </div>
+ </main>
+ <!-- Подвал -->
+ <footer class="dashboard__footer footer">
+ <p>&copy; 2026 Task Manager</p>
+ </footer>
+</body>
+</html>
